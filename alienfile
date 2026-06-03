@@ -15,4 +15,11 @@ share {
   );
   plugin 'Extract' => 'tar.gz';
   plugin 'Build::Autoconf';
+
+  build [
+    'sh bootstrap.sh',
+    './configure --prefix=%{alien_prefix} --with-pic --disable-shared',
+    '%{make}',
+    '%{make} install',
+  ];
 };

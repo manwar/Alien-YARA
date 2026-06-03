@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use version;
 
-our $VERSION   = qv('v0.0.3');
+our $VERSION   = qv('v0.0.4');
 our $AUTHORITY = 'cpan:MANWAR';
 
 use parent 'Alien::Base';
@@ -17,7 +17,7 @@ Alien::YARA - Find or download and install the YARA malware analysis library
 
 =head1 VERSION
 
-Version v0.0.3
+Version v0.0.4
 
 =head1 SYNOPSIS
 
