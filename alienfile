@@ -8,7 +8,7 @@ probe sub {
 };
 
 share {
-  start_url 'https://github.com/VirusTotal/yara/releases/download/v4.5.0/yara-4.5.0.tar.gz';
+  start_url 'https://github.com/VirusTotal/yara/archive/refs/tags/v4.5.0.tar.gz';
 
   plugin 'Download' => (
     filter => qr/^yara-?([\d\.]+)\.tar\.gz$/,

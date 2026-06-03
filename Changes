@@ -1,5 +1,8 @@
 Revision history for Alien::YARA
 
+0.0.3  2026-06-03
+       - Updated alienfile w.r.t Yara v4.5.0 tarball
+
 0.0.2  2026-06-03
        - Switch download URL from raw repository archive to official release
          tarball asset. This ensures pre-generated './configure' scripts
