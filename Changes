@@ -1,5 +1,8 @@
 Revision history for Alien::YARA
 
+v0.0.6  2026-06-04
+        - Fixed alienfile.
+
 v0.0.5  2026-06-04
         - Updated alienfile.
 
