@@ -1,4 +1,10 @@
 Revision history for Alien::YARA
 
+0.0.2  2026-06-03
+       - Switch download URL from raw repository archive to official release
+         tarball asset. This ensures pre-generated './configure' scripts
+         are present and removes downstream dependencies on autotools
+         (autoconf/automake).
+
 0.0.1  2026-06-03
-        - module created.
+       - module created.
