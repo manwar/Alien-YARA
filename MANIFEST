@@ -1,0 +1,11 @@
+Changes
+alienfile
+lib/Alien/YARA.pm
+LICENSE
+Makefile.PL
+MANIFEST
+MANIFEST.SKIP
+README
+t/00_load.t
+t/manifest.t
+t/pod.t
