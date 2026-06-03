@@ -14,12 +14,15 @@ share {
     filter => qr/^yara-?([\d\.]+)\.tar\.gz$/,
   );
   plugin 'Extract' => 'tar.gz';
-  plugin 'Build::Autoconf';
 
-  build [
-    'sh bootstrap.sh',
-    './configure --prefix=%{alien_prefix} --with-pic --disable-shared',
-    '%{make}',
-    '%{make} install',
-  ];
+  # Pass custom arguments directly to the autoconf script via 'args'
+  plugin 'Build::Autoconf' => (
+    args => [ '--with-pic', '--disable-shared' ],
+  );
+
+  # Hook into the 'build' stage to run bootstrap BEFORE Autoconf triggers
+  before 'build' => sub {
+    my ($build) = @_;
+    $build->command_sequence->run('sh', 'bootstrap.sh');
+  };
 };
