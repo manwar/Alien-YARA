@@ -10,7 +10,7 @@ my $abmm = Alien::Build::MM->new;
 
 WriteMakefile($abmm->mm_args(
     NAME               => 'Alien::YARA',
-    DISTNAME           => 'Alien::YARA',
+    DISTNAME           => 'Alien-YARA',
     AUTHOR             => 'Mohammad S Anwar <mohammad.anwar@yahoo.com>',
     VERSION_FROM       => 'lib/Alien/YARA.pm',
     ABSTRACT_FROM      => 'lib/Alien/YARA.pm',
